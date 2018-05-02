@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var a, b = 10;
+
+      console.log(window.a); // undefined
+      console.log(window.b); // 10
+      console.log(a); // undefined
+      console.log(b); // 10
+
+      let x, y = 20;
+
+      console.log(window.x); // undefined
+      console.log(window.y); // undefined
+      console.log(x); // undefined
+      console.log(y); // 20
+
+      var i = j = 30;
+
+      console.log(window.i); // 30
+      console.log(window.j); // 30
+      console.log(i); // 30
+      console.log(j); // 30
+
+      let n = m = 40;
+
+      console.log(window.n); // undefined
+      console.log(window.m); // 40
+      console.log(n); // 40
+      console.log(m); // 40
+    </script>
+  </body>
+</html>
